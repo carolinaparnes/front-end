@@ -1,0 +1,102 @@
+/* Esto es un comentario
+SELECTOR { 
+    PROPIEDAD : 1234
+    PROPIEDAD : "12JKM445LL"
+}
+
+bgcolor = "lightblue"
+*/
+
+* {
+    font-size: x-large;
+    /*font-size: 2rem;*/
+   /*font-family: fantasy;*/
+  
+}
+/* Toda la pagina siempre debe tener fondo negro*/
+body {
+    background-color: black;
+}
+footer {
+    background-color: mediumorchid !important;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    position: absolute;
+    bottom: 10%;
+    left: 30px;
+}
+header {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+    border-color: chartreuse;
+    border-style: dotted;
+    border-width: 10px;
+    /*background-color: black !important; Importante recordar que esto puede alterar elementos no deseados*/
+}
+
+/*Primer pseudoclase*/
+a:hover { 
+    background-color:white;
+   
+}
+#iniciar {
+    color: white;
+}
+.whitebg {
+    background-color: white;
+    color: black;
+}
+body > table > tbody > tr {
+    background-color: black;
+    color: white;
+}
+body > table > tbody > tr > td:nth-child(1) > aside {
+    background-color: black;
+    color: white;
+}
+body > table > tbody > tr > td:nth-child(2) > section > p {
+    background-color: black;
+    color: white;
+}
+ul, h2 {
+    color: white;
+}
+
+.fa-chess-queen{
+    color: red;
+}
+
+tr:nth-child(odd) > td {
+    padding-top: 50px;
+}
+
+/*************************************************************************/
+/*   Estilo del componente Musica Boton -                                */
+/*************************************************************************/
+
+@keyframes cambiarcolor { 
+    from { background-color: red;}
+    to { background-color: yellow;}
+}
+.musicbutton {
+    border-color: red;
+    border-style: none;
+    border-width: 10px;
+   /* transition: ease-out;
+    transition-duration: 1s;*/
+    animation-name: cambiarcolor;
+    animation-duration: 5s;
+
+}
+
+.musicbutton:hover { 
+   background-color: red;
+   box-shadow: green;
+}
+/*************************************************************************/
+/*   Estilo del componente Boton - fondo blanco                          */
+/*************************************************************************/
